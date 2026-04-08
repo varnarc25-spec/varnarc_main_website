@@ -1,0 +1,78 @@
+{
+    "info": {
+      "name": "Laravel Admin Tools - Varnarc",
+      "_postman_id": "varnarc-admin-tools-1234",
+      "description": "Secure admin endpoints for cache clearing, key regeneration, and migrations",
+      "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+      {
+        "name": "Clear Cache",
+        "request": {
+          "method": "POST",
+          "header": [
+            {
+              "key": "X-Admin-Token",
+              "value": "{{admin_token}}",
+              "type": "text"
+            }
+          ],
+          "url": {
+            "raw": "{{base_url}}/api/admin/cache/clear",
+            "host": ["{{base_url}}"],
+            "path": ["api", "admin", "cache", "clear"]
+          }
+        },
+        "response": []
+      },
+      {
+        "name": "Generate APP_KEY",
+        "request": {
+          "method": "POST",
+          "header": [
+            {
+              "key": "X-Admin-Token",
+              "value": "{{admin_token}}",
+              "type": "text"
+            }
+          ],
+          "url": {
+            "raw": "{{base_url}}/api/admin/key/generate",
+            "host": ["{{base_url}}"],
+            "path": ["api", "admin", "key", "generate"]
+          }
+        },
+        "response": []
+      },
+      {
+        "name": "Run Migrations",
+        "request": {
+          "method": "POST",
+          "header": [
+            {
+              "key": "X-Admin-Token",
+              "value": "{{admin_token}}",
+              "type": "text"
+            }
+          ],
+          "url": {
+            "raw": "{{base_url}}/api/admin/migrate/run",
+            "host": ["{{base_url}}"],
+            "path": ["api", "admin", "migrate", "run"]
+          }
+        },
+        "response": []
+      }
+    ],
+    "variable": [
+      {
+        "key": "base_url",
+        "value": "https://varnarc.com"
+      },
+      {
+        "key": "admin_token",
+        "value": "your-secret-token"
+      }
+    ]
+  }
+  
