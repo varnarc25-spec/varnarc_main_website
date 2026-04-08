@@ -139,6 +139,14 @@ onUnmounted(() => {
               <p class="copy-rights mb-0 currentyear">
                 {{ new Date().getFullYear() }} © Velzon - Themesbrand
               </p>
+              <div class="mt-2 fs-13">
+                <Link href="/pages/privacy-policy" class="text-reset text-decoration-underline me-3">
+                  Privacy Policy
+                </Link>
+                <Link href="/pages/term-conditions" class="text-reset text-decoration-underline">
+                  Terms of Service
+                </Link>
+              </div>
             </div>
           </BCol>
           <BCol sm="6">
