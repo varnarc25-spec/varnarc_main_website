@@ -137,7 +137,7 @@ onUnmounted(() => {
           <BCol sm="6">
             <div>
               <p class="copy-rights mb-0 currentyear">
-                {{ new Date().getFullYear() }} © Velzon - Themesbrand
+                {{ new Date().getFullYear() }} © Velzon
               </p>
               <div class="mt-2 fs-13">
                 <Link href="/pages/privacy-policy" class="text-reset text-decoration-underline me-3">
