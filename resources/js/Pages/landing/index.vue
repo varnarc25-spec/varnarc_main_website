@@ -2576,7 +2576,7 @@ const resolveIcon = (path: string) => {
       </BContainer>
     </section>
 
-    <LandingFooter />
+    <!-- <LandingFooter /> -->
   </div>
 </template>
 

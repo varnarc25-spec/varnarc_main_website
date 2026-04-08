@@ -1,20 +1,22 @@
 import { defineConfig } from 'vite';
 import laravel from 'laravel-vite-plugin';
 import vue from '@vitejs/plugin-vue';
-import path from 'path'
+import path from 'path';
 
 export default defineConfig({
     build: {
-        outDir: 'public/build',
         manifest: 'manifest.json',
         emptyOutDir: true,
-        chunkSizeWarningLimit: 4000
+        chunkSizeWarningLimit: 4000,
     },
     plugins: [
         laravel({
             input: 'resources/js/app.js',
             refresh: true,
+            /** Emit compiled assets to <project-root>/build (not public/build). */
+            publicDirectory: '.',
             buildDirectory: 'build',
+            hotFile: path.resolve(__dirname, 'public/hot'),
         }),
         vue({
             template: {
