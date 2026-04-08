@@ -2557,7 +2557,7 @@ const resolveIcon = (path: string) => {
           <BCol sm>
             <div>
               <h4 class="text-white mb-0 fw-semibold">
-                Build your web App/SaaS with Velzon dashboard
+                Build your web App/SaaS with Varnarc dashboard
               </h4>
             </div>
           </BCol>
