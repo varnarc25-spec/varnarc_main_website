@@ -146,6 +146,9 @@ onUnmounted(() => {
                 <Link href="/pages/term-conditions" class="text-reset text-decoration-underline">
                   Terms of Service
                 </Link>
+                <Link href="/pages/refund-policy" class="text-reset text-decoration-underline ms-3">
+                  Refund Policy
+                </Link>
               </div>
             </div>
           </BCol>

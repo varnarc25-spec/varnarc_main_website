@@ -554,11 +554,15 @@ class VelzonRoutesController extends Controller
     }
 
     public function pages_privacy_policy() {
-        return Inertia::render('pages/privacy-policy');
+        return view('policies.privacy_policy');
     }
 
     public function pages_term_conditions() {
-        return Inertia::render('pages/term-conditions');
+        return view('policies.terms_conditions');
+    }
+
+    public function pages_refund_policy() {
+        return view('policies.refund_policy');
     }
 
     public function charts_chartjs() {
