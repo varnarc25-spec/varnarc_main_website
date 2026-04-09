@@ -144,7 +144,7 @@ onUnmounted(() => {
                   Privacy Policy
                 </Link>
                 <Link href="/pages/term-conditions" class="text-reset text-decoration-underline">
-                  Terms of Service
+                  Terms &amp; Conditions
                 </Link>
                 <Link href="/pages/refund-policy" class="text-reset text-decoration-underline ms-3">
                   Refund Policy
