@@ -17,90 +17,115 @@ import LandingFooter from "../Components/LandingFooter.vue";
               <BCardBody class="p-4 p-md-5">
                 <div class="text-center mb-4">
                   <h2 class="mb-2">Terms &amp; Conditions</h2>
-                  <p class="text-muted mb-0">
-                    VARNARC PRIVATE LIMITED (MARG) | Last updated: 09 Apr, 2026
-                  </p>
+                  <p class="text-muted mb-0"><strong>Varnarc Private Limited</strong></p>
+                  <p class="text-muted mb-0"><strong>Effective Date:</strong> 09 April 2026</p>
                 </div>
 
                 <p class="text-muted">
-                  These Terms &amp; Conditions govern access to and use of the MARG fintech application and related
-                  services provided by VARNARC PRIVATE LIMITED ("Varnarc", "we", "our", "us"). By registering for,
-                  accessing, or using MARG, you agree to be bound by these terms and applicable laws.
+                  Welcome to Varnarc Private Limited ("Company", "we", "our", "us"). By accessing or using our platform
+                  ("App" / "Services"), you agree to the following Terms.
                 </p>
 
-                <h5 class="mt-4">1. Eligibility and account responsibility</h5>
-                <ul class="text-muted mb-0 vstack gap-2">
-                  <li>You must be legally eligible to enter into a binding contract under applicable law.</li>
-                  <li>You must provide accurate, complete, and updated information during onboarding and use.</li>
-                  <li>You are solely responsible for maintaining confidentiality of credentials, OTPs, and device access.</li>
-                  <li>You must immediately report unauthorized activity or suspected compromise of your account.</li>
+                <h5 class="mt-4">1. Services Offered</h5>
+                <p class="text-muted mb-2">We provide:</p>
+                <ul class="text-muted mb-0">
+                  <li>Mobile &amp; DTH Recharge</li>
+                  <li>BBPS Bill Payments</li>
+                  <li>Utility payments and related fintech services</li>
+                </ul>
+                <p class="text-muted mt-2 mb-0">
+                  Services are enabled via third-party providers including payment gateways and aggregators.
+                </p>
+
+                <h5 class="mt-4">2. User Eligibility</h5>
+                <ul class="text-muted mb-0">
+                  <li>Must be 18 years or older</li>
+                  <li>Must provide accurate and complete information</li>
+                  <li>Must comply with applicable Indian laws</li>
                 </ul>
 
-                <h5 class="mt-4">2. Nature of service</h5>
-                <p class="text-muted">
-                  MARG is a fintech platform that enables digital financial workflows through integrated ecosystem
-                  partners. Varnarc is a technology service provider and does not represent itself as a bank.
-                </p>
-
-                <h5 class="mt-4">3. Permitted and prohibited use</h5>
-                <ul class="text-muted mb-0 vstack gap-2">
-                  <li>You may use the platform only for lawful and authorized personal or business purposes.</li>
-                  <li>You must not engage in fraud, abuse, money-laundering activities, or any prohibited conduct.</li>
-                  <li>You must not reverse engineer, tamper with, or attempt unauthorized access to systems.</li>
-                  <li>You must not use another person’s identity, credentials, or payment instrument without authority.</li>
+                <h5 class="mt-4">3. Account Registration</h5>
+                <ul class="text-muted mb-0">
+                  <li>Users must verify mobile/email</li>
+                  <li>You are responsible for maintaining account confidentiality</li>
+                  <li>Any activity under your account is your responsibility</li>
                 </ul>
 
-                <h5 class="mt-4">4. KYC, compliance, and monitoring</h5>
-                <p class="text-muted">
-                  You agree to provide KYC and verification information as required by law, partner obligations, and
-                  internal risk controls. Varnarc may perform screening, fraud checks, and transaction monitoring, and
-                  may suspend or restrict access where compliance concerns arise.
+                <h5 class="mt-4">4. Payments</h5>
+                <ul class="text-muted mb-0">
+                  <li>Payments are processed via <strong>Cashfree Payments</strong></li>
+                  <li>We do not store full card/banking credentials</li>
+                  <li>All transactions are subject to approval by banks/payment providers</li>
+                </ul>
+
+                <h5 class="mt-4">5. Third-Party Services</h5>
+                <p class="text-muted mb-2">We use third-party providers:</p>
+                <ul class="text-muted mb-0">
+                  <li>Payment gateway (Cashfree)</li>
+                  <li>Recharge &amp; BBPS APIs (Kwik API)</li>
+                </ul>
+                <p class="text-muted mt-2 mb-0">
+                  We are not liable for failures caused by these providers.
                 </p>
 
-                <h5 class="mt-4">5. Third-party services and availability</h5>
-                <p class="text-muted">
-                  Certain services depend on banks, payment processors, network providers, and other third-party
-                  systems. Service availability may vary due to downtime, technical issues, maintenance, or regulatory
-                  restrictions outside Varnarc’s direct control.
-                </p>
+                <h5 class="mt-4">6. Transaction Processing</h5>
+                <ul class="text-muted mb-0">
+                  <li>Recharge / bill payments are processed instantly or within defined timelines</li>
+                  <li>Delays may occur due to operator/bank issues</li>
+                  <li>Transaction status is final based on provider confirmation</li>
+                </ul>
 
-                <h5 class="mt-4">6. Fees, charges, and taxes</h5>
-                <p class="text-muted">
-                  Applicable fees, charges, or taxes (if any) will be displayed in line with service configuration and
-                  legal requirements. You authorize Varnarc and ecosystem partners to process such charges as relevant.
-                </p>
+                <h5 class="mt-4">7. Prohibited Activities</h5>
+                <p class="text-muted mb-2">Users must not:</p>
+                <ul class="text-muted mb-0">
+                  <li>Use the platform for fraudulent transactions</li>
+                  <li>Attempt unauthorized access</li>
+                  <li>Violate any laws</li>
+                </ul>
 
-                <h5 class="mt-4">7. Suspension and termination</h5>
-                <p class="text-muted">
-                  Varnarc may suspend, limit, or terminate access to MARG where required for security, compliance,
-                  legal/regulatory direction, policy violations, payment risk, or suspected unauthorized activity.
-                </p>
+                <h5 class="mt-4">8. Fees &amp; Charges</h5>
+                <ul class="text-muted mb-0">
+                  <li>Service fees may apply</li>
+                  <li>Charges will be shown before payment</li>
+                </ul>
 
-                <h5 class="mt-4">8. Limitation of liability</h5>
-                <p class="text-muted">
-                  To the extent permitted by law, Varnarc is not liable for indirect, incidental, special, or
-                  consequential losses arising from platform use, third-party failures, network outages, user errors,
-                  or events beyond reasonable control.
-                </p>
-
-                <h5 class="mt-4">9. Indemnity</h5>
-                <p class="text-muted">
-                  You agree to indemnify and hold harmless Varnarc, its directors, officers, employees, and partners
-                  from claims, losses, or liabilities arising out of misuse of services, legal non-compliance, or
-                  breach of these terms.
-                </p>
-
-                <h5 class="mt-4">10. Governing law and jurisdiction</h5>
-                <p class="text-muted">
-                  These Terms are governed by the laws of India. Subject to applicable statutory remedies, courts in
-                  Hyderabad, Telangana will have jurisdiction for disputes arising from these terms.
-                </p>
-
-                <h5 class="mt-4">11. Updates to terms</h5>
+                <h5 class="mt-4">9. Refund &amp; Cancellation</h5>
                 <p class="text-muted mb-0">
-                  We may modify these Terms &amp; Conditions from time to time. Updated terms become effective when
-                  published on the platform. Continued use of MARG after updates constitutes acceptance.
+                  Refunds are governed by our Refund Policy. Certain transactions (like successful recharges) are
+                  non-refundable.
                 </p>
+
+                <h5 class="mt-4">10. Limitation of Liability</h5>
+                <p class="text-muted mb-2">We are not liable for:</p>
+                <ul class="text-muted mb-0">
+                  <li>Failed transactions due to banks/operators</li>
+                  <li>Delays caused by third parties</li>
+                  <li>Indirect or consequential losses</li>
+                </ul>
+
+                <h5 class="mt-4">11. Termination</h5>
+                <p class="text-muted mb-2">We may suspend or terminate accounts:</p>
+                <ul class="text-muted mb-0">
+                  <li>For suspicious activity</li>
+                  <li>For violation of terms</li>
+                </ul>
+
+                <h5 class="mt-4">12. Governing Law</h5>
+                <p class="text-muted mb-0">
+                  These terms are governed by the laws of India. Jurisdiction: Bangalore, Karnataka.
+                </p>
+
+                <h5 class="mt-4">13. Contact</h5>
+                <p class="text-muted mb-0">
+                  <strong>Varnarc Private Limited</strong><br />
+                  #153, Bileshivelle Village, Kothanur, Bangalore, KA 560077<br />
+                  Email:
+                  <a href="mailto:admin@varnarc.com" class="text-reset text-decoration-underline">admin@varnarc.com</a><br />
+                  Phone: 9739723973
+                </p>
+
+                <h5 class="mt-4">14. Consent</h5>
+                <p class="text-muted mb-0">By using our services, you agree to these Terms.</p>
               </BCardBody>
             </BCard>
           </BCol>
