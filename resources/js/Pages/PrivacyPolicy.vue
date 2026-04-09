@@ -17,146 +17,222 @@ import LandingFooter from "../Components/LandingFooter.vue";
               <BCardBody class="p-4 p-md-5">
                 <div class="text-center mb-4">
                   <h2 class="mb-2">Privacy Policy</h2>
-                  <p class="text-muted mb-0">Varnarc Private Limited</p>
-                  <p class="text-muted mb-0"><strong>Effective Date:</strong> [Insert Date]</p>
+                  <p class="text-muted mb-0"><strong>Varnarc Private Limited</strong></p>
+                  <p class="text-muted mb-0"><strong>Effective Date:</strong> 09 April 2026</p>
                 </div>
 
                 <p class="text-muted">
-                  Varnarc Private Limited ("Company", "we", "our", or "us") operates a financial technology platform
-                  ("App" / "Services"). We are committed to protecting your privacy and ensuring transparency in how
-                  your information is collected, used, and shared.
+                  Varnarc Private Limited ("Varnarc", "Company", "we", "our", or "us") operates fintech services
+                  for users in India, including mobile recharge, DTH recharge, BBPS bill payments, and related digital
+                  payment services through our mobile and web platforms (collectively, the "Services").
                 </p>
                 <p class="text-muted">
-                  This Privacy Policy describes how we handle your personal data when you use our services.
+                  This Privacy Policy explains how we collect, use, store, disclose, and protect personal data. It is
+                  intended to align with applicable Indian laws, including the Digital Personal Data Protection Act,
+                  2023 ("DPDP Act"), the Information Technology Act, 2000 and associated rules, and applicable RBI and
+                  payment ecosystem requirements.
                 </p>
 
-                <h5 class="mt-4">1. Information we collect</h5>
-                <h6 class="mt-3">a. Personal Information</h6>
+                <h5 class="mt-4">1. Scope and Applicability</h5>
+                <p class="text-muted mb-0">
+                  This Privacy Policy applies to personal data processed by Varnarc when you use our Services,
+                  including account onboarding, transaction processing, customer support, compliance verification, and
+                  related communications.
+                </p>
+
+                <h5 class="mt-4">2. Personal Data We Collect</h5>
+                <h6 class="mt-3">2.1 Identity and Contact Data</h6>
                 <ul class="text-muted mb-0">
-                  <li>Full Name</li>
-                  <li>Mobile Number</li>
-                  <li>Email Address</li>
-                  <li>Date of Birth</li>
-                  <li>Government-issued ID (PAN, Aadhaar, etc.)</li>
-                  <li>Bank account details (for transactions)</li>
+                  <li>Full name</li>
+                  <li>Mobile number</li>
+                  <li>Email address</li>
+                  <li>Date of birth (where required)</li>
                 </ul>
-                <h6 class="mt-3">b. Financial Information</h6>
+
+                <h6 class="mt-3">2.2 Financial and Transaction Data</h6>
                 <ul class="text-muted mb-0">
-                  <li>Transaction history</li>
-                  <li>Payment details</li>
-                  <li>Billing information</li>
+                  <li>Recharge and bill payment history</li>
+                  <li>Transaction reference numbers and status</li>
+                  <li>Payment details and billing information</li>
+                  <li>Merchant, biller, and service provider metadata</li>
                 </ul>
-                <h6 class="mt-3">c. Device &amp; Technical Data</h6>
+
+                <h6 class="mt-3">2.3 KYC and Sensitive Personal Data</h6>
+                <p class="text-muted mb-2">
+                  For verification, fraud prevention, or compliance obligations, we may process sensitive personal data
+                  such as:
+                </p>
+                <ul class="text-muted mb-0">
+                  <li>PAN details</li>
+                  <li>Aadhaar details (where legally permitted and required)</li>
+                  <li>Official identity/address proofs</li>
+                  <li>Selfie/photo verification and related KYC data</li>
+                </ul>
+
+                <h6 class="mt-3">2.4 Device and Technical Data</h6>
                 <ul class="text-muted mb-0">
                   <li>IP address</li>
-                  <li>Device type and OS</li>
-                  <li>App usage data</li>
-                  <li>Cookies and tracking technologies</li>
-                </ul>
-                <h6 class="mt-3">d. KYC Information</h6>
-                <p class="text-muted mb-2">To comply with regulations, we may collect:</p>
-                <ul class="text-muted mb-0">
-                  <li>Identity proof</li>
-                  <li>Address proof</li>
-                  <li>Selfie/photo verification</li>
+                  <li>Device type, operating system, app/browser version</li>
+                  <li>Log events, crash reports, and usage analytics</li>
+                  <li>Cookies, SDK signals, and similar tracking technologies</li>
                 </ul>
 
-                <h5 class="mt-4">2. How we use information</h5>
+                <h5 class="mt-4">3. Legal Basis for Processing</h5>
+                <p class="text-muted mb-2">We process personal data based on one or more of the following:</p>
                 <ul class="text-muted mb-0">
-                  <li>Provide and improve our services</li>
-                  <li>Process transactions and payments</li>
-                  <li>Verify identity (KYC compliance)</li>
-                  <li>Prevent fraud and unauthorized activities</li>
-                  <li>Communicate updates, offers, and alerts</li>
-                  <li>Comply with legal and regulatory requirements</li>
+                  <li><strong>Consent:</strong> where you provide clear consent for specific processing.</li>
+                  <li><strong>Contractual necessity:</strong> to provide Services requested by you.</li>
+                  <li><strong>Legal obligation:</strong> to comply with applicable laws, regulations, and lawful requests.</li>
+                  <li><strong>Legitimate uses under applicable law:</strong> including fraud prevention and service security.</li>
                 </ul>
 
-                <h5 class="mt-4">4. Data sharing and disclosure</h5>
-                <h6 class="mt-3">a. Service Providers</h6>
+                <h5 class="mt-4">4. How We Use Personal Data</h5>
                 <ul class="text-muted mb-0">
-                  <li>Payment gateways</li>
-                  <li>Banking partners</li>
-                  <li>KYC verification providers</li>
-                  <li>Cloud hosting services</li>
+                  <li>To register and manage user accounts.</li>
+                  <li>To process mobile, DTH, and BBPS transactions.</li>
+                  <li>To conduct KYC checks and identity verification.</li>
+                  <li>To detect, investigate, and prevent fraud, abuse, and unauthorized activity.</li>
+                  <li>To provide customer support and resolve disputes.</li>
+                  <li>To send transactional alerts, service notifications, and account communications.</li>
+                  <li>To comply with financial, tax, audit, and regulatory requirements.</li>
+                  <li>To improve platform performance, reliability, and user experience.</li>
                 </ul>
-                <h6 class="mt-3">b. Regulatory Authorities</h6>
-                <p class="text-muted mb-0">When required under applicable laws (RBI, IT Act, etc.)</p>
-                <h6 class="mt-3">c. Business Transfers</h6>
-                <p class="text-muted mb-0">In case of merger, acquisition, or sale of assets</p>
-                <p class="text-muted mt-2 mb-0"><strong>We do not sell your personal data to third parties.</strong></p>
-                
-                <h5 class="mt-4">5. Data security</h5>
-                <p class="text-muted mb-2">We implement industry-standard security measures:</p>
+
+                <h5 class="mt-4">5. Data Sharing and Disclosure</h5>
+                <p class="text-muted mb-2">We may share personal data on a need-to-know basis with:</p>
+
+                <h6 class="mt-3">5.1 Payment and Fintech Partners</h6>
                 <ul class="text-muted mb-0">
-                  <li>Encryption of sensitive data</li>
-                  <li>Secure APIs and authentication</li>
-                  <li>Regular security audits</li>
+                  <li><strong>Cashfree Payments</strong> for payment gateway processing and transaction lifecycle support.</li>
+                  <li><strong>Kwik API</strong> for recharge and BBPS service orchestration.</li>
+                  <li>Banks, billers, and payment ecosystem participants required for transaction completion.</li>
+                  <li>NPCI participants/infrastructure where applicable for payment flows and reconciliation.</li>
+                </ul>
+
+                <h6 class="mt-3">5.2 Compliance and Legal Recipients</h6>
+                <ul class="text-muted mb-0">
+                  <li>Regulators, statutory authorities, auditors, courts, and law enforcement as legally required.</li>
+                  <li>Entities involved in fraud investigation, AML review, and risk control under lawful process.</li>
+                </ul>
+
+                <h6 class="mt-3">5.3 Corporate Transactions</h6>
+                <p class="text-muted mb-0">
+                  In case of merger, acquisition, restructuring, or asset transfer, personal data may be transferred in
+                  accordance with law and with appropriate safeguards.
+                </p>
+
+                <p class="text-muted mt-3 mb-0"><strong>We do not sell personal data.</strong></p>
+
+                <h5 class="mt-4">6. Fraud Prevention and AML Monitoring</h5>
+                <p class="text-muted mb-0">
+                  We use automated and manual controls to monitor suspicious activity, prevent fraud, and support
+                  anti-money laundering (AML) and financial crime compliance requirements. Transactions or accounts may
+                  be flagged, delayed, restricted, or reported where risk indicators or legal obligations apply.
+                </p>
+
+                <h5 class="mt-4">7. Data Storage, Localization, and Cross-Border Transfers</h5>
+                <p class="text-muted mb-2">
+                  We primarily store and process personal data in India. Where cross-border processing or access is
+                  necessary (for infrastructure, support, or service delivery), we apply reasonable contractual,
+                  technical, and organizational safeguards consistent with applicable Indian law.
+                </p>
+                <p class="text-muted mb-0">
+                  We ensure that third-party processors handling personal data provide comparable data protection and
+                  security controls.
+                </p>
+
+                <h5 class="mt-4">8. Data Security Measures</h5>
+                <p class="text-muted mb-2">We implement industry-standard safeguards, including:</p>
+                <ul class="text-muted mb-0">
+                  <li>Encryption of sensitive data in transit and at rest where applicable.</li>
+                  <li>Secure APIs, tokenized communications, and authentication controls.</li>
+                  <li>Role-based access controls and least-privilege access principles.</li>
+                  <li>Monitoring, logging, and periodic security assessments.</li>
                 </ul>
                 <p class="text-muted mt-2 mb-0">
-                  However, no system is 100% secure, and we cannot guarantee absolute security.
+                  <strong>Disclaimer:</strong> No digital system is 100% secure. While we take strong security
+                  measures, absolute security cannot be guaranteed.
                 </p>
 
-                <h5 class="mt-4">6. Data retention</h5>
-                <p class="text-muted mb-2">We retain your data:</p>
-                <ul class="text-muted mb-0">
-                  <li>As long as your account is active</li>
-                  <li>As required under legal obligations (e.g., financial regulations)</li>
-                </ul>
-                <p class="text-muted mt-2 mb-0">
-                  After this period, data is securely deleted or anonymized.
-                </p>
-
-                <h5 class="mt-4">7. Your rights</h5>
-                <p class="text-muted mb-2">You have the right to:</p>
-                <ul class="text-muted mb-0">
-                  <li>Access your personal data</li>
-                  <li>Request correction of inaccurate data</li>
-                  <li>Request deletion (subject to legal requirements)</li>
-                  <li>Withdraw consent where applicable</li>
-                </ul>
-                <p class="text-muted mt-2 mb-0">
-                  To exercise your rights, contact us at:<br />
-                  📧 <strong>[Insert Email Address]</strong>
-                </p>
-
-                <h5 class="mt-4">8. Cookies &amp; tracking</h5>
-                <p class="text-muted mb-2">We use cookies and similar technologies to:</p>
-                <ul class="text-muted mb-0">
-                  <li>Improve user experience</li>
-                  <li>Analyze usage patterns</li>
-                  <li>Provide personalized content</li>
-                </ul>
-                <p class="text-muted mt-2 mb-0">You can control cookies through your browser settings.</p>
-
-                <h5 class="mt-4">9. Third-party links</h5>
+                <h5 class="mt-4">9. Data Retention</h5>
                 <p class="text-muted mb-0">
-                  Our app may contain links to third-party websites or services. We are not responsible for their
-                  privacy practices.
+                  We retain personal data for as long as needed to provide Services, fulfill contractual obligations,
+                  comply with legal/regulatory retention periods, resolve disputes, and enforce rights. Data no longer
+                  required is securely deleted or anonymized.
                 </p>
 
-                <h5 class="mt-4">10. Children's privacy</h5>
+                <h5 class="mt-4">10. Account Deletion and Data Deletion Requests</h5>
+                <p class="text-muted mb-2">
+                  You may request account deletion by contacting us at <strong>admin@varnarc.com</strong> from your
+                  registered email/mobile details or through in-app support (where available).
+                </p>
+                <ul class="text-muted mb-0">
+                  <li>We will verify identity before processing deletion requests.</li>
+                  <li>Certain data may be retained where required by law, regulation, or legitimate compliance needs.</li>
+                  <li>Post verification, account access will be disabled and eligible data will be deleted/anonymized.</li>
+                </ul>
+
+                <h5 class="mt-4">11. Communication Preferences and Marketing Opt-Out</h5>
+                <p class="text-muted mb-2">
+                  We may send service and transactional communications that are necessary for account and transaction
+                  management.
+                </p>
+                <ul class="text-muted mb-0">
+                  <li>You may opt out of promotional/marketing messages through unsubscribe options or by contacting us.</li>
+                  <li>Operational and legal notices may continue where required for service and compliance reasons.</li>
+                </ul>
+
+                <h5 class="mt-4">12. Your Rights</h5>
+                <p class="text-muted mb-2">Subject to applicable law, you may request to:</p>
+                <ul class="text-muted mb-0">
+                  <li>Access personal data we hold about you.</li>
+                  <li>Correct inaccurate or incomplete personal data.</li>
+                  <li>Delete personal data, subject to legal limitations.</li>
+                  <li>Withdraw consent where processing is based on consent.</li>
+                  <li>Raise grievances regarding data handling.</li>
+                </ul>
+
+                <h5 class="mt-4">13. Cookies and Tracking Technologies</h5>
                 <p class="text-muted mb-0">
-                  Our services are not intended for individuals under 18 years of age. We do not knowingly collect data
-                  from minors.
+                  We use cookies and similar technologies to enhance user experience, maintain secure sessions, analyze
+                  usage patterns, and improve our Services. You may manage cookie settings through your browser/device,
+                  though some features may be impacted.
                 </p>
 
-                <h5 class="mt-4">11. Updates to this policy</h5>
+                <h5 class="mt-4">14. Third-Party Links and Services</h5>
                 <p class="text-muted mb-0">
-                  We may update this Privacy Policy periodically. Changes will be posted on this page with an updated
-                  effective date.
+                  Our Services may contain links to third-party websites or services. Their privacy practices are
+                  governed by their own policies, and we are not responsible for third-party privacy practices.
                 </p>
 
-                <h5 class="mt-4">12. Contact us</h5>
+                <h5 class="mt-4">15. Children's Privacy</h5>
+                <p class="text-muted mb-0">
+                  Our Services are not intended for individuals under 18 years of age. We do not knowingly collect
+                  personal data from minors.
+                </p>
+
+                <h5 class="mt-4">16. Changes to This Privacy Policy</h5>
+                <p class="text-muted mb-0">
+                  We may update this Privacy Policy from time to time. Material changes will be posted on this page
+                  with an updated effective date.
+                </p>
+
+                <h5 class="mt-4">17. Grievance Officer and Contact Details</h5>
                 <p class="text-muted mb-0">
                   <strong>Varnarc Private Limited</strong><br />
                   #153, Bileshivelle Village, Kothanur, Bangalore, KA 560077<br />
-                  📧 Email: admin@varnarc.com<br />
-                  📞 Phone: 9739723973
+                  Email: admin@varnarc.com<br />
+                  Phone: 9739723973
+                </p>
+                <p class="text-muted mt-2 mb-0">
+                  <strong>Grievance Officer:</strong> [To Be Appointed]<br />
+                  <strong>Grievance Email:</strong> admin@varnarc.com
                 </p>
 
-                <h5 class="mt-4">13. Consent</h5>
+                <h5 class="mt-4">18. Consent</h5>
                 <p class="text-muted mb-0">
-                  By using our App, you agree to the terms of this Privacy Policy.
+                  By using our Services, you acknowledge that you have read and understood this Privacy Policy and
+                  agree to the collection and processing of personal data as described herein.
                 </p>
               </BCardBody>
             </BCard>
