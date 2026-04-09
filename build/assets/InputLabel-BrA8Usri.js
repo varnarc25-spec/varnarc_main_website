@@ -1,0 +1,1 @@
+import{o as t,b as s,d as o,t as r,f as l,e as n}from"./app-z5HGiShE.js";const c={key:0,class:"form-label"},p={__name:"InputLabel",props:{value:String},setup(e){return(m,a)=>e.value?(t(),s("label",c,[o(r(e.value)+" ",1),a[0]||(a[0]=l("span",{class:"text-danger"},"*",-1))])):n("",!0)}};export{p as _};
