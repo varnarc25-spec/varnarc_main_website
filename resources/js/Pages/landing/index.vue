@@ -142,7 +142,7 @@ onMounted(() => {
 
   const copyright = document.querySelector(".currentyear");
   if (copyright) {
-    copyright.innerHTML = `${new Date().getFullYear()} © Velzon - Themesbrand`;
+    copyright.innerHTML = `${new Date().getFullYear()} © Varnarc - Themesbrand`;
   }
 });
 
@@ -816,14 +816,14 @@ const resolveIcon = (path: string) => {
       </BContainer>
     </section>
 
-    <section class="py-5 bg-primary position-relative">
+    <!-- <section class="py-5 bg-primary position-relative">
       <div class="bg-overlay bg-overlay-pattern opacity-50"></div>
       <BContainer>
         <BRow class="align-items-center gy-4">
           <BCol sm>
             <div>
               <h4 class="text-white mb-0 fw-semibold">
-                Build your web App/SaaS with Velzon dashboard
+                Build your web App/SaaS with Varnarc dashboard
               </h4>
             </div>
           </BCol>
@@ -840,7 +840,7 @@ const resolveIcon = (path: string) => {
           </BCol>
         </BRow>
       </BContainer>
-    </section>
+    </section> -->
 
     <section class="section bg-light" id="features">
       <BContainer>
@@ -2563,13 +2563,13 @@ const resolveIcon = (path: string) => {
           </BCol>
           <BCol sm="auto">
             <div>
-              <BLink
+              <!-- <BLink
                 href="https://1.envato.market/velzon-admin"
                 target="_blank"
                 class="btn bg-gradient btn-danger"
                 ><i class="ri-shopping-cart-2-line align-middle me-1"></i> Buy
                 Now</BLink
-              >
+              > -->
             </div>
           </BCol>
         </BRow>
