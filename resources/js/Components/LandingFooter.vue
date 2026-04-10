@@ -40,7 +40,7 @@ onMounted(() => {
 
   const copyright = document.querySelector(".currentyear");
   if (copyright) {
-    copyright.innerHTML = `${new Date().getFullYear()} © Velzon - Themesbrand`;
+    copyright.innerHTML = `${new Date().getFullYear()} © Varnarc Private Limited`;
   }
 });
 
@@ -137,7 +137,10 @@ onUnmounted(() => {
           <BCol sm="6">
             <div>
               <p class="copy-rights mb-0 currentyear">
-                {{ new Date().getFullYear() }} © Velzon
+                {{ new Date().getFullYear() }} © Varnarc Private Limited
+              </p>
+              <p class="mb-0 fs-12 text-muted mt-2 ff-secondary">
+                CIN: U62013KA2025PTC197851
               </p>
               <div class="mt-2 fs-13">
                 <Link href="/pages/privacy-policy" class="text-reset text-decoration-underline me-3">
