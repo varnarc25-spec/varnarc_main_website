@@ -1,0 +1,10 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f7f7f9;
+  color: #1d1d1f;
+}
+
+main {
+  min-height: calc(100vh - 140px);
+}

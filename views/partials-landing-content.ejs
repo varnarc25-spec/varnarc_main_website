@@ -1,0 +1,216 @@
+<!-- Hero + service plan picker -->
+<section class="section pb-0 hero-section" id="hero">
+  <div class="bg-overlay bg-overlay-pattern"></div>
+  <div class="row justify-content-center">
+    <div class="col-lg-8 col-sm-10">
+      <div class="text-center mt-lg-5 pt-5">
+        <h1 class="display-6 fw-semibold mb-3 lh-base">
+          Amplify Your Digital Presence with
+          <span class="text-primary">Varnarc</span>
+        </h1>
+        <p class="lead text-muted lh-base">
+          Unlock your brand’s full potential with our cutting-edge digital solutions. Whether you need a
+          stunning website, a powerful marketing strategy, or seamless user experiences, we help you stand
+          out in a competitive digital world.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="plans-container">
+      <div class="plans-wrapper">
+        <div class="container1 mt-5">
+          <div
+            class="d-flex gap-4 position-relative justify-content-center plan-wrapper flex-column flex-lg-row"
+          >
+            <% servicesList.forEach(function(service, index) { %>
+            <div
+              class="plan-box js-plan-box fade-in"
+              data-plan-id="<%= service.id %>"
+              data-plan-index="<%= index %>"
+            >
+              <div class="plan-card hero-plan-card d-flex flex-column shadow-sm">
+                <div class="plan-card-body">
+                  <div class="plan-header flex-column align-items-center text-center">
+                    <div class="avatar-lg mb-3">
+                      <div class="avatar-title bg-secondary-subtle text-primary fs-17 rounded p-2">
+                        <img
+                          src="<%= service.icon %>"
+                          alt=""
+                          class="mx-auto img-fluid d-block"
+                          style="max-height: 48px"
+                        />
+                      </div>
+                    </div>
+                    <div>
+                      <h3 class="mb-1 fw-semibold"><%= service.title %></h3>
+                    </div>
+                  </div>
+                  <p class="text-center text-muted mb-0"><%= service.description %></p>
+                </div>
+              </div>
+            </div>
+            <% }); %>
+
+            <div class="js-plan-detail detail-box w-100" data-detail-id="seo" hidden>
+              <div class="card border-0 shadow">
+                <div class="card-body p-4">
+                  <div class="right-content-section-column">
+                    <button type="button" class="btn btn-secondary align-self-start js-plan-back">Back</button>
+                    <h4 class="mb-0">Web Development & SEO Audit</h4>
+                    <div class="row g-2 align-items-center">
+                      <div class="col">
+                        <input
+                          type="text"
+                          class="form-control form-control-lg bg-light border-light"
+                          placeholder="yourdomain.com"
+                          id="domainname"
+                          name="domainname"
+                        />
+                      </div>
+                      <div class="col-auto">
+                        <button type="button" class="btn btn-primary btn-lg" id="seo-generate-btn">
+                          <i class="mdi mdi-magnify me-1"></i> Generate
+                        </button>
+                      </div>
+                    </div>
+                    <div class="service-item">
+                      <ul class="list-group list-group-flush">
+                        <% webSeoServices.forEach(function(service) { %>
+                        <li class="list-group-item px-0 border-b pb-2 bg-transparent">
+                          <a href="<%= service.link %>" class="text-decoration-none text-body listcard d-block rounded px-2 py-2">
+                            <div class="d-flex align-items-center">
+                              <i class="mdi mdi-check-bold text-success me-2"></i>
+                              <div>
+                                <h6 class="fs-6 mb-0"><%= service.title %></h6>
+                                <small class="text-muted"><%= service.description %></small>
+                              </div>
+                            </div>
+                          </a>
+                        </li>
+                        <% }); %>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="js-plan-detail detail-box w-100" data-detail-id="digital" hidden>
+              <div class="card border-0 shadow">
+                <div class="card-body p-4">
+                  <div class="right-content-section-column">
+                    <button type="button" class="btn btn-secondary align-self-start js-plan-back">Back</button>
+                    <h4 class="mb-0">Digital Marketing</h4>
+                    <p class="text-muted mb-0">
+                      Comprehensive digital marketing services to grow your brand online and drive targeted
+                      traffic.
+                    </p>
+                    <ul class="list-group list-group-flush">
+                      <% digitalMarketingServices.forEach(function(service) { %>
+                      <li class="list-group-item px-0 border-b pb-2 bg-transparent">
+                        <a href="<%= service.link %>" class="text-decoration-none text-body listcard d-block rounded px-2 py-2">
+                          <div class="d-flex align-items-center gap-2">
+                            <img src="<%= service.icon %>" alt="" style="width: 36px; height: 36px; object-fit: contain" />
+                            <div>
+                              <h6 class="fs-6 mb-0"><%= service.title %></h6>
+                              <small class="text-muted"><%= service.description %></small>
+                            </div>
+                          </div>
+                        </a>
+                      </li>
+                      <% }); %>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="js-plan-detail detail-box w-100" data-detail-id="financial" hidden>
+              <div class="card border-0 shadow">
+                <div class="card-body p-4">
+                  <div class="right-content-section-column">
+                    <button type="button" class="btn btn-secondary align-self-start js-plan-back">Back</button>
+                    <h4 class="mb-0">Financial & Taxation</h4>
+                    <p class="text-muted mb-0">
+                      End-to-end financial and taxation services designed to support compliance and simplify
+                      operations.
+                    </p>
+                    <ul class="list-group list-group-flush">
+                      <% financeServices.forEach(function(service) { %>
+                      <li class="list-group-item px-0 border-b pb-2 bg-transparent">
+                        <a href="<%= service.link %>" class="text-decoration-none text-body listcard d-block rounded px-2 py-2">
+                          <div class="d-flex align-items-center">
+                            <i class="mdi mdi-check-bold text-success me-2"></i>
+                            <div>
+                              <h6 class="fs-6 mb-0"><%= service.title %></h6>
+                              <small class="text-muted"><%= service.description %></small>
+                            </div>
+                          </div>
+                        </a>
+                      </li>
+                      <% }); %>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section pb-0 hero-section">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8 col-sm-10">
+        <div class="mt-4 mt-sm-5 pt-sm-5 mb-sm-n5 demo-carousel position-relative">
+          <div class="demo-img-patten-top d-none d-sm-block">
+            <img src="/assets/images/landing/img-pattern.png" class="d-block img-fluid" alt="" />
+          </div>
+          <div class="demo-img-patten-bottom d-none d-sm-block">
+            <img src="/assets/images/landing/img-pattern.png" class="d-block img-fluid" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="position-absolute start-0 end-0 bottom-0 hero-shape-svg">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 120" preserveAspectRatio="none" class="w-100" style="height: 80px">
+      <path fill="#ffffff" d="M0,118 C288,98.6 1152,40.4 1440,21L1440 140L0 140z"></path>
+    </svg>
+  </div>
+</section>
+
+<div class="pt-5 mt-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="text-center mt-5">
+          <h5 class="fs-5">
+            Trusted <span class="text-primary text-decoration-underline">by</span> the world's best
+          </h5>
+          <div class="trusted-client-slider mt-sm-5 mt-4 mb-sm-5 mb-4">
+            <div class="swiper js-clients-swiper pb-4">
+              <div class="swiper-wrapper">
+                <% ['amazon','walmart','lenovo','paypal','shopify','verizon'].forEach(function(name){ %>
+                <div class="swiper-slide">
+                  <div class="client-images text-center py-3">
+                    <img src="/assets/images/clients/<%= name %>.svg" alt="<%= name %>" class="mx-auto img-fluid d-block" />
+                  </div>
+                </div>
+                <% }); %>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<%- include('partials-landing-content-mid') %>
+<%- include('partials-landing-content-plans') %>
+<%- include('partials-landing-content-tail') %>

@@ -1,0 +1,52 @@
+<%- include("partials-header", { title }) %>
+<div class="container">
+  <section class="card shadow-sm mb-4">
+    <div class="card-body p-4 p-md-5">
+      <h1 class="display-6 fw-semibold">Job Landing</h1>
+      <p class="lead text-muted">
+        Migrated from `resources/js/Pages/landing/job-landing.vue` with key sections and route parity.
+      </p>
+      <form class="row g-2 mt-2">
+        <div class="col-md-4">
+          <input class="form-control" placeholder="Job, company name..." />
+        </div>
+        <div class="col-md-4">
+          <select class="form-select">
+            <option>Full Time</option>
+            <option>Part Time</option>
+            <option>Freelance</option>
+            <option>Internship</option>
+          </select>
+        </div>
+        <div class="col-md-4">
+          <button class="btn btn-primary w-100" type="button">Find Job</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <section class="row g-3 mb-4">
+    <div class="col-md-6">
+      <div class="card h-100 shadow-sm">
+        <div class="card-body">
+          <h2 class="h5">How it works</h2>
+          <ol class="mb-0">
+            <li>Register account</li>
+            <li>Create resume</li>
+            <li>Find job</li>
+            <li>Apply and interview</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="card h-100 shadow-sm">
+        <div class="card-body">
+          <h2 class="h5">Top categories</h2>
+          <p class="mb-0 text-muted">IT, Construction, Government, Marketing, Education, Digital Marketing, Tourism.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+<%- include("partials-footer") %>

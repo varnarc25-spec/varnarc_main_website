@@ -1,0 +1,397 @@
+/* Varnarc landing — ported from varnarc_main_website landing SCSS + index.vue scoped */
+
+:root {
+  --landing-primary: #405189;
+  --landing-success: #0ab39c;
+  --landing-secondary-bg: #ffffff;
+  --landing-body: #212529;
+  --landing-muted: #878a99;
+  --landing-font-secondary: "Poppins", system-ui, sans-serif;
+}
+
+body.landing-page {
+  font-family: var(--landing-font-secondary);
+  font-size: 15px;
+  color: var(--landing-body);
+}
+
+.layout-wrapper.landing {
+  background-color: var(--bs-body-bg, #f3f6f9);
+  min-height: 100vh;
+}
+
+.navbar-landing {
+  padding: 10px 0;
+  transition: all 0.5s ease;
+}
+
+@media (max-width: 991.98px) {
+  .navbar-landing {
+    background-color: var(--landing-secondary-bg);
+    box-shadow: 0 1px 16px -2px rgba(56, 65, 74, 0.15);
+    padding: 10px 8px;
+  }
+}
+
+.navbar-landing .navbar-nav .nav-link {
+  font-size: 16px;
+  font-weight: 500;
+  transition: all 0.4s;
+  font-family: var(--landing-font-secondary);
+  color: var(--landing-body);
+  padding: 14px;
+}
+
+.navbar-landing .navbar-nav .nav-link:hover,
+.navbar-landing .navbar-nav .nav-link:focus {
+  color: var(--landing-success) !important;
+}
+
+.navbar-landing.is-sticky {
+  background-color: var(--landing-secondary-bg);
+  box-shadow: 0 1px 16px -2px rgba(56, 65, 74, 0.15);
+}
+
+.navbar-brand .card-logo-dark {
+  display: inline-block;
+}
+.navbar-brand .card-logo-light {
+  display: none;
+}
+
+.vertical-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+  z-index: 1003;
+}
+
+.navbar-show .vertical-overlay {
+  display: block;
+}
+
+.section {
+  padding: 90px 0;
+  position: relative;
+}
+
+@media (max-width: 767.98px) {
+  .section {
+    padding: 50px 0;
+  }
+}
+
+.icon-effect {
+  position: relative;
+}
+.icon-effect::before {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  background-color: rgba(10, 179, 156, 0.2);
+  border-radius: 50%;
+  bottom: 0;
+  left: 0;
+}
+
+.hero-section {
+  background-color: rgba(var(--bs-light-rgb, 248, 249, 250), 0.5);
+}
+
+.hero-section .hero-shape-svg svg path {
+  fill: var(--landing-secondary-bg);
+}
+
+.bg-overlay {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.bg-overlay-pattern {
+  background-image: url("/assets/images/landing/bg-pattern.png");
+  background-position: center;
+  background-size: cover;
+  opacity: 0.2;
+}
+
+.demo-carousel {
+  position: relative;
+  z-index: 1;
+}
+.demo-img-patten-top {
+  position: absolute;
+  right: -50px;
+  top: -16px;
+  max-width: 230px;
+}
+.demo-img-patten-bottom {
+  position: absolute;
+  left: -70px;
+  bottom: -50px;
+  max-width: 230px;
+}
+
+.client-images img {
+  max-height: 45px;
+  width: auto;
+  margin: 12px auto;
+  transition: all 0.4s;
+}
+
+.process-card {
+  position: relative;
+}
+.process-card .process-arrow-img {
+  position: absolute;
+  left: 75%;
+  top: 7%;
+  width: 50%;
+  opacity: 0.1;
+}
+
+.custom-footer {
+  color: #9ba7b3;
+}
+.footer-list li a {
+  color: #9ba7b3;
+  padding: 7px 0;
+  display: block;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+}
+.footer-list li a:hover {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.footer-social-link .avatar-title {
+  color: #778089;
+  background-color: rgba(255, 255, 255, 0.05);
+  transition: all 0.3s ease;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+.footer-social-link .avatar-title:hover {
+  color: #fff;
+  background-color: var(--landing-primary);
+}
+
+#back-to-top {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 1050;
+  display: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  align-items: center;
+  justify-content: center;
+}
+
+.ff-secondary {
+  font-family: var(--landing-font-secondary);
+}
+
+/* Plan cards (hero selector) — from index.vue scoped */
+.container1 {
+  max-width: 100%;
+}
+.plan-wrapper {
+  min-height: 280px;
+  align-items: flex-start;
+  position: relative;
+}
+.plan-box {
+  flex: 0 0 33%;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  z-index: 1;
+  max-width: 100%;
+}
+.detail-box {
+  flex: 1 1 100%;
+  max-width: 100%;
+  animation: landingFadeIn 0.5s ease forwards;
+}
+.fade-in {
+  animation: landingFadeIn 0.4s ease forwards;
+}
+.fade-out {
+  animation: landingFadeOut 0.4s ease forwards;
+}
+.move-left {
+  animation: landingSlideLeft 0.4s ease forwards;
+}
+.hide-card {
+  visibility: hidden;
+  position: absolute;
+  pointer-events: none;
+}
+@keyframes landingFadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@keyframes landingFadeOut {
+  from {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+}
+@keyframes landingSlideLeft {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+.plan-card {
+  cursor: pointer;
+  max-width: 100%;
+  min-height: 350px;
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+}
+.plan-card.hero-plan-card {
+  min-height: 350px;
+}
+.selected {
+  z-index: 2;
+}
+
+.right-content-section-column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Pricing tab plan cards */
+.plan-card.pricing-plan {
+  cursor: default;
+  min-height: 500px;
+  max-width: 340px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.plan-card-body {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+.plan-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.plan-feature-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.plan-feature-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+  color: #6c757d;
+}
+
+.list-group-item.listcard {
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  transition: box-shadow 0.2s ease-in-out;
+}
+.list-group-item.listcard:hover {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  background-color: #fde7d1 !important;
+}
+
+.border-b {
+  border-bottom: 1px solid var(--bs-border-color, #dee2e6);
+}
+
+.text-tertiary {
+  color: #299cdb;
+}
+
+.btn-soft-success {
+  --bs-btn-color: #0ab39c;
+  --bs-btn-bg: rgba(10, 179, 156, 0.1);
+  --bs-btn-border-color: transparent;
+  --bs-btn-hover-bg: #0ab39c;
+  --bs-btn-hover-color: #fff;
+}
+
+.avatar-title.bg-secondary-subtle {
+  background-color: rgba(64, 81, 137, 0.1) !important;
+}
+
+/* Accordion */
+.accordion-border-box .accordion-item {
+  border-top: 1px solid var(--bs-border-color);
+  border-radius: var(--bs-border-radius, 0.25rem);
+}
+.accordion-border-box .accordion-item:not(:first-of-type) {
+  margin-top: 8px;
+}
+.accordion-border-box .accordion-item .accordion-button {
+  border-radius: var(--bs-border-radius);
+}
+.accordion-border-box .accordion-item .accordion-button:not(.collapsed) {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.custom-accordion-border .accordion-item {
+  border-left: 3px solid var(--bs-border-color);
+}
+
+/* Swiper */
+.trusted-client-slider .swiper-slide,
+.client-review-swiper .swiper-slide {
+  height: auto;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: var(--landing-primary);
+}
+
+.text-white-50 {
+  color: rgba(255, 255, 255, 0.65) !important;
+}
+
+@media (max-width: 991.98px) {
+  .plan-box {
+    flex: 1 1 100%;
+  }
+  .plan-wrapper {
+    flex-direction: column;
+  }
+}
+
+/* Legal pages (privacy, terms, refund) — align with Vue section padding */
+.legal-content-section {
+  padding-top: 130px;
+}

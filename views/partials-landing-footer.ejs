@@ -1,0 +1,283 @@
+    <footer class="custom-footer bg-dark py-5 position-relative">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 mt-4">
+            <div>
+              <img
+                src="/assets/images/logo-light.png"
+                alt="Varnarc"
+                height="50"
+              />
+              <div class="mt-4 fs-13">
+                <p class="text-white mb-1">Varnarc | SEO, Digital Marketing and Financial Services</p>
+                <p class="ff-secondary text-muted">
+                  At Varnarc, we provide custom tools for SEO audits, digital marketing, and website
+                  optimization to help businesses grow and enhance their digital presence
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-7 ms-lg-auto">
+            <div class="row">
+              <div class="col-sm-4 mt-4">
+                <h5 class="text-white mb-0">Company</h5>
+                <div class="text-muted mt-3">
+                  <ul class="list-unstyled ff-secondary footer-list">
+                    <li><a href="/home">Home</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="/job-landing">Jobs</a></li>
+                    <li><a href="/nft-landing">NFT</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-sm-4 mt-4">
+                <h5 class="text-white mb-0">Legal</h5>
+                <div class="text-muted mt-3">
+                  <ul class="list-unstyled ff-secondary footer-list">
+                    <li><a href="/pages/privacy-policy">Privacy Policy</a></li>
+                    <li><a href="/pages/term-conditions">Terms &amp; Conditions</a></li>
+                    <li><a href="/pages/refund-policy">Refund Policy</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-sm-4 mt-4">
+                <h5 class="text-white mb-0">Support</h5>
+                <div class="text-muted mt-3">
+                  <ul class="list-unstyled ff-secondary footer-list">
+                    <li><a href="#contact">FAQ / Contact</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row text-center text-sm-start align-items-center mt-5">
+          <div class="col-sm-6">
+            <p class="copy-rights mb-0 currentyear text-white">
+              <%= new Date().getFullYear() %> © Varnarc Private Limited
+            </p>
+            <p class="mb-0 fs-12 text-muted mt-2 ff-secondary">CIN: U62013KA2025PTC197851</p>
+            <div class="mt-2 fs-13">
+              <a href="/pages/privacy-policy" class="text-reset text-decoration-underline me-3"
+                >Privacy Policy</a
+              >
+              <a href="/pages/term-conditions" class="text-reset text-decoration-underline"
+                >Terms &amp; Conditions</a
+              >
+              <a href="/pages/refund-policy" class="text-reset text-decoration-underline ms-3"
+                >Refund Policy</a
+              >
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="text-sm-end mt-3 mt-sm-0">
+              <ul class="list-inline mb-0 footer-social-link">
+                <li class="list-inline-item">
+                  <a href="#" class="avatar-xs d-block text-decoration-none" aria-label="Facebook">
+                    <div class="avatar-title rounded-circle"><i class="ri-facebook-fill"></i></div>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#" class="avatar-xs d-block text-decoration-none" aria-label="GitHub">
+                    <div class="avatar-title rounded-circle"><i class="ri-github-fill"></i></div>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#" class="avatar-xs d-block text-decoration-none" aria-label="LinkedIn">
+                    <div class="avatar-title rounded-circle"><i class="ri-linkedin-fill"></i></div>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#" class="avatar-xs d-block text-decoration-none" aria-label="Google">
+                    <div class="avatar-title rounded-circle"><i class="ri-google-fill"></i></div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <button type="button" class="btn btn-danger btn-icon" id="back-to-top" aria-label="Back to top">
+      <i class="ri-arrow-up-line"></i>
+    </button>
+
+    </div>
+    <!-- /.layout-wrapper.landing -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      (function () {
+        function scrollToId(id) {
+          var el = document.getElementById(id);
+          if (el) el.scrollIntoView({ behavior: "smooth" });
+        }
+        document.querySelectorAll("[data-scroll]").forEach(function (a) {
+          a.addEventListener("click", function (e) {
+            var href = a.getAttribute("href");
+            if (href && href.charAt(0) === "#" && href.length > 1) {
+              e.preventDefault();
+              scrollToId(href.slice(1));
+              var nav = document.getElementById("navbarSupportedContent");
+              if (nav && nav.classList.contains("show")) {
+                bootstrap.Collapse.getOrCreateInstance(nav).hide();
+              }
+            }
+          });
+        });
+
+        var navbar = document.getElementById("navbar");
+        var backToTop = document.getElementById("back-to-top");
+        function onScroll() {
+          var y = document.documentElement.scrollTop || document.body.scrollTop;
+          if (navbar) {
+            if (y >= 50) navbar.classList.add("is-sticky");
+            else navbar.classList.remove("is-sticky");
+          }
+          if (backToTop) backToTop.style.display = y > 100 ? "flex" : "none";
+        }
+        window.addEventListener("scroll", onScroll, { passive: true });
+        onScroll();
+
+        if (backToTop) {
+          backToTop.addEventListener("click", function () {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+          });
+        }
+
+        /* Hero plan selection */
+        var selectedId = null;
+        var boxes = document.querySelectorAll(".js-plan-box");
+        var details = document.querySelectorAll(".js-plan-detail");
+
+        function applyPlanClasses() {
+          boxes.forEach(function (box, index) {
+            var id = box.getAttribute("data-plan-id");
+            box.classList.remove("fade-in", "fade-out", "selected", "move-left", "hide-card");
+            if (!selectedId) {
+              box.classList.add("fade-in");
+              return;
+            }
+            if (selectedId === id) {
+              box.classList.add("selected", "fade-in");
+              if (index > 0) box.classList.add("move-left");
+            } else {
+              box.classList.add("fade-out", "hide-card");
+            }
+          });
+          details.forEach(function (d) {
+            d.hidden = !selectedId || d.getAttribute("data-detail-id") !== selectedId;
+          });
+        }
+
+        boxes.forEach(function (box) {
+          box.addEventListener("click", function () {
+            selectedId = box.getAttribute("data-plan-id");
+            applyPlanClasses();
+          });
+        });
+
+        document.querySelectorAll(".js-plan-back").forEach(function (btn) {
+          btn.addEventListener("click", function () {
+            selectedId = null;
+            applyPlanClasses();
+          });
+        });
+
+        applyPlanClasses();
+
+        /* SEO generate */
+        var genBtn = document.getElementById("seo-generate-btn");
+        var domainInput = document.getElementById("domainname");
+        if (genBtn && domainInput) {
+          genBtn.addEventListener("click", function () {
+            var v = (domainInput.value || "").trim();
+            if (!v) return;
+            window.location.href = "/seo-report/" + encodeURIComponent(v);
+          });
+        }
+
+        /* Pricing month / annual toggles */
+        function wirePlanSwitch(switchId, paneSelector) {
+          var sw = document.getElementById(switchId);
+          if (!sw) return;
+          sw.addEventListener("change", function () {
+            var pane = document.querySelector(paneSelector);
+            if (!pane) return;
+            var annual = sw.checked;
+            pane.querySelectorAll(".month").forEach(function (el) {
+              el.style.display = annual ? "none" : "block";
+            });
+            pane.querySelectorAll(".annual").forEach(function (el) {
+              el.style.display = annual ? "block" : "none";
+            });
+          });
+          sw.dispatchEvent(new Event("change"));
+        }
+        wirePlanSwitch("plan-switch-seo", "#pane-seo-plans");
+        wirePlanSwitch("plan-switch-dm", "#pane-dm-plans");
+
+        /* Trusted clients swiper (home only) */
+        if (document.querySelector(".js-clients-swiper")) {
+          new Swiper(".js-clients-swiper", {
+            loop: true,
+            autoplay: { delay: 2500, disableOnInteraction: true },
+            slidesPerView: 1,
+            spaceBetween: 10,
+            breakpoints: {
+              640: { slidesPerView: 2, spaceBetween: 20 },
+              768: { slidesPerView: 3, spaceBetween: 40 },
+              1200: { slidesPerView: 4, spaceBetween: 50 },
+            },
+          });
+        }
+
+        /* Reviews swiper (home only) */
+        if (document.querySelector(".js-reviews-swiper")) {
+          new Swiper(".js-reviews-swiper", {
+            loop: true,
+            autoplay: { delay: 2500, disableOnInteraction: false },
+            navigation: {
+              nextEl: ".js-reviews-next",
+              prevEl: ".js-reviews-prev",
+            },
+            pagination: { el: ".js-reviews-pagination", clickable: true },
+          });
+        }
+
+        /* Count-up stats */
+        function animateValue(el, end, duration) {
+          var start = 0;
+          var t0 = null;
+          function step(ts) {
+            if (!t0) t0 = ts;
+            var p = Math.min((ts - t0) / duration, 1);
+            el.textContent = Math.floor(start + (end - start) * p);
+            if (p < 1) requestAnimationFrame(step);
+          }
+          requestAnimationFrame(step);
+        }
+        var statObs = new IntersectionObserver(
+          function (entries) {
+            entries.forEach(function (en) {
+              if (!en.isIntersecting) return;
+              var el = en.target;
+              var end = parseInt(el.getAttribute("data-count-end"), 10);
+              if (!el.getAttribute("data-done")) {
+                el.setAttribute("data-done", "1");
+                animateValue(el, end, 2000);
+              }
+            });
+          },
+          { threshold: 0.3 }
+        );
+        document.querySelectorAll(".js-count").forEach(function (el) {
+          statObs.observe(el);
+        });
+      })();
+    </script>
+  </body>
+</html>
