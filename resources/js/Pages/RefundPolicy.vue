@@ -6,7 +6,7 @@ import LandingFooter from "../Components/LandingFooter.vue";
 
 <template>
   <div class="layout-wrapper landing">
-    <Head title="Refund Policy" />
+    <Head title="Refund &amp; Cancellation Policy" />
     <LandingNavbar />
 
     <section class="section bg-light" style="padding-top: 130px;">
@@ -16,31 +16,83 @@ import LandingFooter from "../Components/LandingFooter.vue";
             <BCard no-body>
               <BCardBody class="p-4 p-md-5">
                 <div class="text-center mb-4">
-                  <h2 class="mb-2">Cancellation &amp; Refund Policy</h2>
-                  <p class="text-muted mb-0">Last updated: 09 Apr, 2026</p>
+                  <h2 class="mb-2">Refund &amp; Cancellation Policy</h2>
+                  <p class="text-muted mb-0"><strong>Varnarc Private Limited</strong></p>
+                  <p class="text-muted mb-0">Last updated: 10 April 2026</p>
                 </div>
 
-                <p class="text-muted">
-                  Varnarc believes in helping customers as far as possible and follows a fair cancellation and refund
-                  process.
+                <h5 class="mt-4">1. General Policy</h5>
+                <p class="text-muted mb-0">
+                  All transactions are processed through third-party providers (Cashfree, Kwik API, banks, BBPS network).
                 </p>
 
-                <h5 class="mt-4">Cancellation</h5>
+                <h5 class="mt-4">2. Recharge Transactions</h5>
                 <ul class="text-muted mb-0">
-                  <li>Cancellations are considered only if requested immediately after placing an order.</li>
-                  <li>Requests may not be accepted once processing or shipping has started.</li>
-                  <li>Perishable items are generally not eligible for cancellation.</li>
+                  <li>Successful recharges are <strong>non-refundable</strong>.</li>
+                  <li>
+                    If recharge fails but money is deducted:
+                    <ul class="mt-2 mb-0">
+                      <li>Refund will be processed within <strong>5–7 business days</strong>.</li>
+                    </ul>
+                  </li>
                 </ul>
 
-                <h5 class="mt-4">Damaged or defective items</h5>
+                <h5 class="mt-4">3. BBPS Bill Payments</h5>
+                <ul class="text-muted mb-0">
+                  <li>Once bill payment is successful → <strong>no cancellation allowed</strong>.</li>
+                  <li>Failed transactions will be auto-refunded.</li>
+                </ul>
+
+                <h5 class="mt-4">4. Duplicate Transactions</h5>
+                <ul class="text-muted mb-0">
+                  <li>Duplicate payments will be refunded after verification.</li>
+                </ul>
+
+                <h5 class="mt-4">5. Failed / Pending Transactions</h5>
+                <ul class="text-muted mb-0">
+                  <li>
+                    If transaction status is pending:
+                    <ul class="mt-2 mb-0">
+                      <li>Wait for up to 24 hours.</li>
+                    </ul>
+                  </li>
+                  <li>
+                    If failed:
+                    <ul class="mt-2 mb-0">
+                      <li>Refund initiated automatically.</li>
+                    </ul>
+                  </li>
+                </ul>
+
+                <h5 class="mt-4">6. Refund Timeline</h5>
+                <ul class="text-muted mb-0">
+                  <li>Wallet / UPI: 1–3 days</li>
+                  <li>Bank/Card: 5–7 business days</li>
+                </ul>
+
+                <h5 class="mt-4">7. Refund Mode</h5>
+                <p class="text-muted mb-2">Refunds will be processed:</p>
+                <ul class="text-muted mb-0">
+                  <li>To original payment method only</li>
+                </ul>
+
+                <h5 class="mt-4">8. Disputes</h5>
                 <p class="text-muted mb-0">
-                  Report damaged or defective items to customer service within 7 days of delivery. Requests are
-                  reviewed after merchant verification.
+                  Users must report disputes within <strong>7 days</strong> of transaction.
                 </p>
 
-                <h5 class="mt-4">Refund processing</h5>
+                <h5 class="mt-4">9. Exceptions</h5>
+                <p class="text-muted mb-2">Refunds may be denied if:</p>
+                <ul class="text-muted mb-0">
+                  <li>Incorrect details entered by user</li>
+                  <li>Successful transaction confirmed by operator</li>
+                </ul>
+
+                <h5 class="mt-4">10. Contact</h5>
                 <p class="text-muted mb-0">
-                  Approved refunds are usually processed within 3 to 5 days to the original payment source.
+                  Email:
+                  <a href="mailto:admin@varnarc.com">admin@varnarc.com</a><br />
+                  Phone: 9739723973
                 </p>
               </BCardBody>
             </BCard>

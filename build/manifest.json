@@ -1,6 +1,6 @@
 {
-  "_LandingFooter.vue_vue_type_script_setup_true_lang-CkGHEb5y.js": {
-    "file": "assets/LandingFooter.vue_vue_type_script_setup_true_lang-CkGHEb5y.js",
+  "_LandingFooter.vue_vue_type_script_setup_true_lang-YNMZG8xf.js": {
+    "file": "assets/LandingFooter.vue_vue_type_script_setup_true_lang-YNMZG8xf.js",
     "name": "LandingFooter.vue_vue_type_script_setup_true_lang",
     "imports": [
       "resources/js/app.js",
@@ -13,8 +13,8 @@
     "file": "assets/autoplay-DHBATib1.css",
     "src": "_autoplay-!~{00e}~.js"
   },
-  "_autoplay-B4SmnRai.js": {
-    "file": "assets/autoplay-B4SmnRai.js",
+  "_autoplay-D6c_28aG.js": {
+    "file": "assets/autoplay-D6c_28aG.js",
     "name": "autoplay",
     "imports": [
       "resources/js/app.js"
@@ -61,11 +61,11 @@
     "file": "assets/pagination-DE0q59Ew.css",
     "src": "_pagination-!~{00f}~.js"
   },
-  "_pagination-BZVoZvk_.js": {
-    "file": "assets/pagination-BZVoZvk_.js",
+  "_pagination-B_C1-vKs.js": {
+    "file": "assets/pagination-B_C1-vKs.js",
     "name": "pagination",
     "imports": [
-      "_autoplay-B4SmnRai.js"
+      "_autoplay-D6c_28aG.js"
     ],
     "css": [
       "assets/pagination-DE0q59Ew.css"
@@ -414,46 +414,46 @@
     "src": "resources/images/webdesign1.png"
   },
   "resources/js/Pages/PrivacyPolicy.vue": {
-    "file": "assets/PrivacyPolicy-Bg-cwq-8.js",
+    "file": "assets/PrivacyPolicy-DIEpxUv3.js",
     "name": "PrivacyPolicy",
     "src": "resources/js/Pages/PrivacyPolicy.vue",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.js",
-      "_LandingFooter.vue_vue_type_script_setup_true_lang-CkGHEb5y.js",
+      "_LandingFooter.vue_vue_type_script_setup_true_lang-YNMZG8xf.js",
       "_avatar-8-lS7S5ehc.js",
       "_avatar-3-C_5WlMir.js",
       "_bell-D3TwL6Fs.js"
     ]
   },
   "resources/js/Pages/RefundPolicy.vue": {
-    "file": "assets/RefundPolicy-yPelVcP7.js",
+    "file": "assets/RefundPolicy-D8ZcBZ1j.js",
     "name": "RefundPolicy",
     "src": "resources/js/Pages/RefundPolicy.vue",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.js",
-      "_LandingFooter.vue_vue_type_script_setup_true_lang-CkGHEb5y.js",
+      "_LandingFooter.vue_vue_type_script_setup_true_lang-YNMZG8xf.js",
       "_avatar-8-lS7S5ehc.js",
       "_avatar-3-C_5WlMir.js",
       "_bell-D3TwL6Fs.js"
     ]
   },
   "resources/js/Pages/TermsConditions.vue": {
-    "file": "assets/TermsConditions-BP1DUceu.js",
+    "file": "assets/TermsConditions-BoQT8fhv.js",
     "name": "TermsConditions",
     "src": "resources/js/Pages/TermsConditions.vue",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.js",
-      "_LandingFooter.vue_vue_type_script_setup_true_lang-CkGHEb5y.js",
+      "_LandingFooter.vue_vue_type_script_setup_true_lang-YNMZG8xf.js",
       "_avatar-8-lS7S5ehc.js",
       "_avatar-3-C_5WlMir.js",
       "_bell-D3TwL6Fs.js"
     ]
   },
   "resources/js/Pages/landing/LandingNavbar.vue": {
-    "file": "assets/LandingNavbar-BmSRyWs7.js",
+    "file": "assets/LandingNavbar-u2peeuNA.js",
     "name": "LandingNavbar",
     "src": "resources/js/Pages/landing/LandingNavbar.vue",
     "isDynamicEntry": true,
@@ -465,15 +465,15 @@
     ]
   },
   "resources/js/Pages/landing/index.vue": {
-    "file": "assets/index-B3fJ1kfy.js",
+    "file": "assets/index-BJWLNt2K.js",
     "name": "index",
     "src": "resources/js/Pages/landing/index.vue",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.js",
-      "_autoplay-B4SmnRai.js",
-      "_LandingFooter.vue_vue_type_script_setup_true_lang-CkGHEb5y.js",
-      "_pagination-BZVoZvk_.js",
+      "_autoplay-D6c_28aG.js",
+      "_LandingFooter.vue_vue_type_script_setup_true_lang-YNMZG8xf.js",
+      "_pagination-B_C1-vKs.js",
       "_avatar-8-lS7S5ehc.js",
       "_avatar-3-C_5WlMir.js",
       "_bell-D3TwL6Fs.js"
@@ -506,13 +506,13 @@
     ]
   },
   "resources/js/Pages/landing/job-landing.vue": {
-    "file": "assets/job-landing-B1a0ocDz.js",
+    "file": "assets/job-landing-CMf0iESu.js",
     "name": "job-landing",
     "src": "resources/js/Pages/landing/job-landing.vue",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.js",
-      "_autoplay-B4SmnRai.js",
+      "_autoplay-D6c_28aG.js",
       "_avatar-8-lS7S5ehc.js",
       "_avatar-3-C_5WlMir.js",
       "_avatar-5-DOStXwbO.js"
@@ -534,14 +534,14 @@
     ]
   },
   "resources/js/Pages/landing/nft-landing.vue": {
-    "file": "assets/nft-landing-D1OKECrv.js",
+    "file": "assets/nft-landing-Bz1RYSju.js",
     "name": "nft-landing",
     "src": "resources/js/Pages/landing/nft-landing.vue",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.js",
-      "_pagination-BZVoZvk_.js",
-      "_autoplay-B4SmnRai.js",
+      "_pagination-B_C1-vKs.js",
+      "_autoplay-D6c_28aG.js",
       "_avatar-8-lS7S5ehc.js",
       "_avatar-5-DOStXwbO.js"
     ],
@@ -562,7 +562,7 @@
     ]
   },
   "resources/js/app.js": {
-    "file": "assets/app-uzqLFCAb.js",
+    "file": "assets/app-B7XPF1zV.js",
     "name": "app",
     "src": "resources/js/app.js",
     "isEntry": true,
